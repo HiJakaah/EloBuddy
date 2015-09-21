@@ -2,7 +2,7 @@ using System;
 using System.Net;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
-using LeagueSharp;
+using EloBuddy;
 
 namespace HighRiven
 {
@@ -19,7 +19,7 @@ namespace HighRiven
                         {
                             var rawVersion =
                                 c.DownloadString(
-                                    "https://raw.githubusercontent.com/xKurisu/KurisuSolutions/master/HighRiven/Properties/AssemblyInfo.cs");
+                                    "https://raw.githubusercontent.com/HiJakaah/EloBuddy/blob/master/HighRiven/properties/AssemblyInfo.cs");
 
                             var match =
                                 new Regex(
@@ -39,7 +39,7 @@ namespace HighRiven
 
                                 if (gitVersion != Program.Version)
                                 {
-                                    Game.PrintChat("<b>Kurisu's Riven</b> - Outdated & newer version available!");
+                                    Game.PrintChat("<b>HighRiven</b> - Outdated & newer version available!");
                                     Game.PrintChat("<font color=\"#FF6666\">- Fixed E=>W in Jungleclear");
                                     Game.PrintChat("<font color=\"#FF6666\">- Added AoE Q farm as higher priority in Laneclear");
                                     Game.PrintChat("<font color=\"#FF6666\">- Added Ward + Q3 to Flee");
