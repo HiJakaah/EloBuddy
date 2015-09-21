@@ -4,7 +4,7 @@ using SharpDX;
 using SharpDX.Direct3D9;
 using Color = System.Drawing.Color;
 
-namespace KurisuRiven
+namespace HighRiven
 {
     internal class HpBarIndicator
     {
