@@ -1,3 +1,7 @@
+using System;
+using System.Reflection;
+using EloBuddy;
+
 namespace KurisuRiven
 {
     internal static class Program
