@@ -11,9 +11,9 @@ using EloBuddy.SDK.Events;
 using EloBuddy.SDK.Menu;
 using EloBuddy.SDK.Menu.Values;
 
-namespace KurisuRiven
+namespace HighRiven
 {
-    internal class KurisuRiven
+    internal class HighRiven
     {
         #region Riven: Main
 
@@ -147,7 +147,7 @@ namespace KurisuRiven
 
         #endregion
 
-        public KurisuRiven()
+        public HighRiven()
         {
             CustomEvents.Game.OnGameLoad += args =>
             {
@@ -394,7 +394,7 @@ namespace KurisuRiven
         #region Riven: Menu
         private static void OnMenuLoad()
         {
-            menu = new Menu("Kurisu's Riven", "kurisuriven", true);
+            menu = new Menu("Kurisu's Riven",  HighRiven", true);
 
             var orbwalkah = new Menu("Orbwalk", "rorb");
             orbwalker = new Orbwalking.Orbwalker(orbwalkah);
