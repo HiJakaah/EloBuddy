@@ -2,7 +2,7 @@ using System;
 using System.Reflection;
 using EloBuddy;
 
-namespace KurisuRiven
+namespace HighRiven
 {
     internal static class Program
     {
@@ -10,7 +10,7 @@ namespace KurisuRiven
         private static void Main(string[] args)
         {
             Version = Assembly.GetExecutingAssembly().GetName().Version;
-            new KurisuRiven();
+            new HighRiven();
         }
     }
 }
