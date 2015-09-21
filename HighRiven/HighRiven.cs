@@ -178,7 +178,7 @@ namespace HighRiven
                     Game.OnUpdate += Game_OnUpdate;
                     Game.OnWndProc += Game_OnWndProc;
 
-                    Game.PrintChat("<b>Kurisu's Riven</b> - Loaded!");
+                    Game.PrintChat("<b>HighRiven</b> - Loaded!");
                     Updater.UpdateCheck();
 
                     if (menu.Item("Farm").GetValue<KeyBind>().Key == menu.Item("semiq").GetValue<KeyBind>().Key ||
@@ -394,7 +394,7 @@ namespace HighRiven
         #region Riven: Menu
         private static void OnMenuLoad()
         {
-            menu = new Menu("Kurisu's Riven",  HighRiven", true);
+            menu = new Menu("HighRiven",  HighRiven", true);
 
             var orbwalkah = new Menu("Orbwalk", "rorb");
             orbwalker = new Orbwalking.Orbwalker(orbwalkah);
